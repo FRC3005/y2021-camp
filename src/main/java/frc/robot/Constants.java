@@ -4,6 +4,8 @@
 
 package frc.robot;
 
+import edu.wpi.first.wpilibj.util.Units;
+
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
  * constants. This class should not be used for any other purpose. All constants should be declared
@@ -56,6 +58,13 @@ public final class Constants {
     // The offset of the arm from the horizontal in its neutral position,
     // measured from the horizontal
     public static final double kArmOffsetRads = 0.5;
+
+    // Simulation constants
+    public static final double kLength = Units.inchesToMeters(30); // Meters
+    public static final double kMass = 5; // Kilograms
+    public static final double kReduction = 27;
+    public static final double kMinAngle = Units.degreesToRadians(-15);
+    public static final double kMaxAngle = Units.degreesToRadians(90);
   }
 
   public static final class AutoConstants {
